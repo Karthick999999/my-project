@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Capstone E-commerce Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <input type="email" id="signup-email" placeholder="Email" />
+    <input type="password" id="signup-password" placeholder="Password" />
+    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+      <button onclick="signup('admin')">Sign Up as Admin</button>
+      <button onclick="signup('customer')">Sign Up as Customer</button>
+    </div>
+    <p id="signup-message"></p>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
